@@ -22,7 +22,7 @@ const Footer = () => {
                         <Link href="#">Home</Link>
                         <Link href="#">Categories</Link>
                         <Link href="#">Products</Link>
-                        <Link href="#">About Us</Link>
+                        <Link href="/about-us">About Us</Link>
                     </div>
                     <div className="flex gap-7 flex-col">
                         <Link href="#">Instagram</Link>

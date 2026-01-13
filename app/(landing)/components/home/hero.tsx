@@ -1,6 +1,6 @@
+import { FiFastForward } from "react-icons/fi";
 import Button from "../ui/button";
 import Image from "next/image";
-import { FiFastForward } from "react-icons/fi";
 
 const HeroSection = () => {
     return (
