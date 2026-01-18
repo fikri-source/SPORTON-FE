@@ -4,14 +4,13 @@ import Image from "next/image";
 import Button from "../ui/button";
 import { FiRefreshCw } from "react-icons/fi";
 
-// tipe props
-type OrderSubmittedProps = {
-  setIsConfirmed: (value: boolean) => void;
-};
+const OrderSubmitted = () => {
+  const reloadOrderStatus = () => {
+    window.location.reload();
+  };
 
-const OrderSubmitted = ({ setIsConfirmed }: OrderSubmittedProps) => {
   return (
-    <div className="bg-white max-w-xl w-full p-16 rounded-2xl shadow mx-auto flex flex-col justify-center items-center text-center mb-32">
+    <div className="bg-white w-160 p-16 rounded-2xl flex flex-col justify-center items-center mx-auto">
       <Image
         src="/images/icon-order-submitted.svg"
         width={117}
@@ -25,7 +24,7 @@ const OrderSubmitted = ({ setIsConfirmed }: OrderSubmittedProps) => {
         payment status, please wait and your order status will be updated in
         less than 12 hours.
       </p>
-      <Button variant="dark" className="w-full" onClick={() => setIsConfirmed(true)}>
+      <Button variant="dark" className="w-full" onClick={reloadOrderStatus}>
         <FiRefreshCw />
         Refresh Order Status
       </Button>

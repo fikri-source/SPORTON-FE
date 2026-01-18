@@ -6,7 +6,7 @@ import { FiRefreshCw } from "react-icons/fi";
 
 const OrderConfirmed = () => {
   return (
-    <div className="bg-white max-w-xl w-full p-16 rounded-2xl shadow mx-auto flex flex-col justify-center items-center text-center mb-32">
+    <div className="bg-white w-160 p-16 rounded-2xl flex flex-col justify-center items-center mx-auto">
       <Image
         src="/images/icon-order-confirmed.svg"
         width={117}
